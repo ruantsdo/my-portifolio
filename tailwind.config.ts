@@ -26,6 +26,42 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      animation: {
+        "scale-in-center":
+          "scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+        float: "float 3s linear infinite 1s",
+        "float-after-appearing":
+          "scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, float 3s linear infinite 1s",
+      },
+      keyframes: {
+        "scale-in-center": {
+          "0%": {
+            transform: "scale(0)",
+            opacity: "1",
+          },
+          to: {
+            transform: "scale(1)",
+            opacity: "1",
+          },
+        },
+        float: {
+          "0%": {
+            transform: "translateY(0)",
+          },
+          "25%": {
+            transform: "translateY(-5px)",
+          },
+          "50%": {
+            transform: "translateY(0)",
+          },
+          "75%": {
+            transform: "translateY(5px)",
+          },
+          "100%": {
+            transform: "translateY(0)",
+          },
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
