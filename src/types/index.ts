@@ -1,3 +1,4 @@
-import SocialMedia from "./SocialMedia";
+import SocialMedia from "./socialMedia";
+import SoftSkill from "./softSkills";
 
-export type { SocialMedia };
+export type { SocialMedia, SoftSkill };
