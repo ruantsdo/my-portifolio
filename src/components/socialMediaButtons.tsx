@@ -29,7 +29,7 @@ const SocialMediaButtons = () => {
               className="animate-float hover:animate-none"
               style={style}
             >
-              <Link href={smd.link}>
+              <Link href={smd.link} target="_blank">
                 <Image src={smd.icon} alt={smd.alt} className="max-h-full" />
               </Link>
             </Button>
