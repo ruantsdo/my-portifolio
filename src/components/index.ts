@@ -1,3 +1,3 @@
-import SocialMediaButtons from "./buttonWithImage";
+import SocialMediaButtons from "./socialMediaButtons";
 
 export { SocialMediaButtons };
