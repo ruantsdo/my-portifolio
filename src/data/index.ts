@@ -1,3 +1,4 @@
 import SocialMediasData from "./socialMediaData";
+import SoftSkills from "./softSkillsData";
 
-export { SocialMediasData };
+export { SocialMediasData, SoftSkills };
