@@ -28,10 +28,10 @@ const config: Config = {
       },
       animation: {
         "scale-in-center":
-          "scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+          "scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
         float: "float 3s linear infinite 1s",
-        "float-after-appearing":
-          "scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, float 3s linear infinite 1s",
+        "slide-in-left":
+          "slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
       },
       keyframes: {
         "scale-in-center": {
@@ -59,6 +59,16 @@ const config: Config = {
           },
           "100%": {
             transform: "translateY(0)",
+          },
+        },
+        "slide-in-left": {
+          "0%": {
+            transform: "translateX(-30px)",
+            opacity: "0",
+          },
+          to: {
+            transform: "translateX(0)",
+            opacity: "1",
           },
         },
       },
