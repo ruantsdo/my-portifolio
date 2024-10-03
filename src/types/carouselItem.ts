@@ -1,5 +1,4 @@
 interface CarouselItem {
-  type: string;
   alt: string;
   src: string;
 }
