@@ -4,6 +4,7 @@ import Devices from "./illustrative/devices.svg";
 import Bulb from "./illustrative/light-bulb.svg";
 import PersonSignal from "./illustrative/person-signal.svg";
 import Rocket from "./illustrative/rocket.svg";
+import Media from "./illustrative/media.svg";
 
 //Social Icons
 import GitHub from "./social/github.svg";
@@ -36,6 +37,7 @@ export {
   GitHub,
   LinkedIn,
   WhatsApp,
+  Media,
   Android,
   CSS,
   Firebase,
