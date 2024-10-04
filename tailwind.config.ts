@@ -32,6 +32,7 @@ const config: Config = {
         float: "float 3s linear infinite 1s",
         "slide-in-left":
           "slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+        tada: "tada 2s ease-in-out infinite 1s",
       },
       keyframes: {
         "scale-in-center": {
@@ -69,6 +70,41 @@ const config: Config = {
           to: {
             transform: "translateX(0)",
             opacity: "1",
+          },
+        },
+        tada: {
+          "0%": {
+            transform: "scale(1)",
+          },
+          "10%": {
+            transform: "scale(0.9) rotate(-3deg)",
+          },
+          "20%": {
+            transform: "scale(0.9) rotate(-3deg)",
+          },
+          "30%": {
+            transform: "scale(1.1) rotate(3deg)",
+          },
+          "40%": {
+            transform: "scale(1.1) rotate(-3deg)",
+          },
+          "50%": {
+            transform: "scale(1.1) rotate(3deg)",
+          },
+          "60%": {
+            transform: "scale(1.1) rotate(-3deg)",
+          },
+          "70%": {
+            transform: "scale(1.1) rotate(3deg)",
+          },
+          "80%": {
+            transform: "scale(1.1) rotate(-3deg)",
+          },
+          "90%": {
+            transform: "scale(1.1) rotate(3deg)",
+          },
+          "100%": {
+            transform: "scale(1) rotate(0)",
           },
         },
       },
