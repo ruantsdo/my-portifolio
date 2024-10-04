@@ -18,23 +18,15 @@ interface Props {
 
 const ProjectCard = ({ Project }: Props) => {
   return (
-    <div className="flex w-[90%] md:w-[340px] h-[300px] animate-slide-in-left">
+    <div className="flex w-full md:w-[340px] h-[300px] animate-slide-in-left">
       <Card className="relative flex flex-col w-full h-full items-center justify-center gap-2 self-center shadow-[0px_0px_10px_0px_#d9d9d9] hover:scale-110 transition-all">
-        {Project.videos || Project.github || Project.vercel ? (
+        {Project.videos || Project.github || Project.demo ? (
           <ProjectToolTip Project={Project} />
         ) : null}
         <CardHeader className="w-full">
           <Image
-            src={
-              Array.isArray(Project.images)
-                ? Project.images[0].src
-                : Project.images.src
-            }
-            alt={
-              Array.isArray(Project.images)
-                ? Project.images[0].alt
-                : Project.images.alt
-            }
+            src={Project.images && Project.images[0].src}
+            alt={Project.images && Project.images[0].alt}
             width={500}
             height={500}
             blurDataURL="data:..."
