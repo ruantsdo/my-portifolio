@@ -5,6 +5,8 @@ import Bulb from "./illustrative/light-bulb.svg";
 import PersonSignal from "./illustrative/person-signal.svg";
 import Rocket from "./illustrative/rocket.svg";
 import Media from "./illustrative/media.svg";
+import Vercel from "./illustrative/vercel.svg";
+import Eye from "./illustrative/eye.svg";
 
 //Social Icons
 import GitHub from "./social/github.svg";
@@ -53,4 +55,6 @@ export {
   TailWind,
   TypeScript,
   Vite,
+  Vercel,
+  Eye,
 };
