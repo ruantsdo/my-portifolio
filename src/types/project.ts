@@ -3,10 +3,11 @@ import CarouselItem from "./carouselItem";
 interface Project {
   title: string;
   description: string;
-  videos?: CarouselItem | CarouselItem[];
-  images: CarouselItem | CarouselItem[];
+  usedTechnologies: string;
+  videos?: CarouselItem[];
+  images: CarouselItem[];
   github?: string;
-  vercel?: string;
+  demo?: string;
 }
 
 export default Project;
