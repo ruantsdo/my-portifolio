@@ -3,7 +3,8 @@ import SoftSkillsCards from "./softSkillsCards";
 import HardSkillsCards from "./hardSkillsCards";
 import ProjectCard from "./ProjectCard/projectCard";
 import ProjectDrawer from "./ProjectCard/projectDrawer";
-import ContactForm from "./contactForm";
+import ContactForm from "./contactForm/contactForm";
+import EmailTemplate from "./contactForm/emailTemplate";
 
 export {
   SocialMediaButtons,
@@ -12,4 +13,5 @@ export {
   ProjectCard,
   ProjectDrawer,
   ContactForm,
+  EmailTemplate,
 };
