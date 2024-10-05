@@ -11,7 +11,7 @@ const montserrat = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Meu Portfolio",
+  title: "Portfolio de Ruan Tiago",
   description: "Portfolio de Ruan Tiago",
 };
 
