@@ -7,6 +7,7 @@ import Rocket from "./illustrative/rocket.svg";
 import Media from "./illustrative/media.svg";
 import Vercel from "./illustrative/vercel.svg";
 import Eye from "./illustrative/eye.svg";
+import Loading from "./illustrative/load.svg";
 
 //Social Icons
 import GitHub from "./social/github.svg";
@@ -57,4 +58,5 @@ export {
   Vite,
   Vercel,
   Eye,
+  Loading,
 };
