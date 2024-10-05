@@ -1,8 +1,13 @@
 "use client";
-
+//Zod
 import { z } from "zod";
 
 const contactFormSchema = z.object({
+  name: z
+    .string()
+    .min(1, { message: "Nome é obrigatório." })
+    .max(100, { message: "Nome não deve ser maior do que 100 caracteres" }),
+
   email: z
     .string()
     .min(1, { message: "O campo e-mail é obrigatório." })
