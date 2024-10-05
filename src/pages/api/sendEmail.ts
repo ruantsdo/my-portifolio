@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { Resend } from "resend";
 import { EmailTemplate } from "@/components";
 
-const resend = new Resend("API_KEY");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(
   req: NextApiRequest,
@@ -13,11 +13,12 @@ export default async function handler(
   }
 
   const { name, email, contact, message } = req.body;
+  const destinationEmails = `${process.env.DESTINATION_EMAIL}` || "";
 
   try {
     const data = await resend.emails.send({
-      from: "ORIGIN EMAIL",
-      to: ["DESTINATION EMAIL"],
+      from: "Acme <onboarding@resend.dev>",
+      to: [destinationEmails],
       subject: `${name} entrou em contato pelo portfólio`,
       react: EmailTemplate({
         message,
