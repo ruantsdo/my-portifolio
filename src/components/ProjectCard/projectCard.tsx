@@ -19,11 +19,11 @@ interface Props {
 const ProjectCard = ({ Project }: Props) => {
   return (
     <div className="flex w-full md:w-[340px] h-[300px] animate-slide-in-left">
-      <Card className="relative flex flex-col w-full h-full items-center justify-center gap-2 self-center shadow-[0px_0px_10px_0px_#d9d9d9] hover:scale-110 transition-all">
+      <Card className="relative flex flex-col w-full h-full items-center justify-center gap-2 self-center shadow-[0px_0px_5px_0px_#d9d9d9] md:hover:scale-110 transition-all">
         {Project.videos || Project.github || Project.demo ? (
           <ProjectToolTip Project={Project} />
         ) : null}
-        <CardHeader className="w-full">
+        <CardHeader className="w-full mt-3.5">
           <Image
             src={Project.images && Project.images[0].src}
             alt={Project.images && Project.images[0].alt}
@@ -34,7 +34,7 @@ const ProjectCard = ({ Project }: Props) => {
             className="self-center w-[95%] h-[150px] rounded-md"
           />
         </CardHeader>
-        <CardContent className="w-[95%]">
+        <CardContent className="w-[95%] h-[140px]">
           <CardTitle className="text-center font-bold text-sm mb-1">
             {Project.title}
           </CardTitle>

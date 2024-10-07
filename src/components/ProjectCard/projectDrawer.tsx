@@ -33,7 +33,7 @@ interface Props {
 const ProjectDrawer = ({ Project }: Props) => {
   return (
     <Drawer>
-      <DrawerTrigger className="w-[95%] md:w-[340px] h-[300px]">
+      <DrawerTrigger className="flex w-full md:w-[340px] h-[300px] justify-center">
         <ProjectCard Project={Project} />
       </DrawerTrigger>
       <DrawerContent>
