@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard/projectCard";
 import ProjectDrawer from "./ProjectCard/projectDrawer";
 import ContactForm from "./contactForm/contactForm";
 import EmailTemplate from "./contactForm/emailTemplate";
+import LottieAnimation from "./animation";
 
 export {
   SocialMediaButtons,
@@ -14,4 +15,5 @@ export {
   ProjectDrawer,
   ContactForm,
   EmailTemplate,
+  LottieAnimation,
 };
