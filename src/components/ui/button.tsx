@@ -10,13 +10,14 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-white text-black shadow hover:bg-white/90 font-semibold",
-        secondary: "bg-white text-black shadow hover:bg-white/90 shadow-sm",
+        secondary:
+          "bg-white text-black shadow hover:bg-white/90 shadow-sm w-[95%] md:w-fit font-semibold text-[16px] mb-3 mt-3",
       },
       size: {
-        default: "h-10 px-4 py-2",
+        default: "h-10 px-8 py-2",
         sm: "h-8 rounded-md px-3 text-xs",
         lg: "h-10 rounded-md px-8",
-        icon: "h-10 w-10 rounded-full p-0.5",
+        icon: "h-10 w-10 md:w-12 md:h-12 rounded-full p-0.5",
       },
     },
     defaultVariants: {
