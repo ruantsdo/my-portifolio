@@ -14,11 +14,19 @@ import { Project } from "@/types";
 
 interface Props {
   Project: Project;
+  index: number;
 }
 
-const ProjectCard = ({ Project }: Props) => {
+const ProjectCard = ({ Project, index }: Props) => {
+  const style = {
+    animationDelay: `${index * 0.2}s`,
+  };
+
   return (
-    <div className="flex w-full md:w-[340px] h-[300px] animate-slide-in-left">
+    <div
+      className="flex w-full md:w-[340px] h-[300px] animate-slide-in-left"
+      style={style}
+    >
       <Card className="relative flex flex-col w-full h-full items-center justify-center gap-2 self-center shadow-[0px_0px_5px_0px_#d9d9d9] md:hover:scale-110 transition-all">
         {Project.videos || Project.github || Project.demo ? (
           <ProjectToolTip Project={Project} />

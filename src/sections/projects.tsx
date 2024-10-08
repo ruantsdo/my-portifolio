@@ -24,7 +24,7 @@ const Projects = () => {
 
       <div className="flex flex-wrap justify-evenly gap-5">
         {visibleProjectsList.map((p, index) => (
-          <ProjectDrawer Project={p} key={index} />
+          <ProjectDrawer Project={p} index={index - 2} key={index} />
         ))}
       </div>
 
