@@ -1,4 +1,4 @@
-import SocialMedia from "./socialMedia";
+import SocialMedia from "./SocialMedia";
 import SoftSkill from "./softSkills";
 import HardSkill from "./hardSkills";
 import CarouselItem from "./carouselItem";
