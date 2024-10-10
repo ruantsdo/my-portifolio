@@ -10,7 +10,7 @@ const Skills = () => {
         <SoftSkillsCards />
       </div>
 
-      <div className="w-full flex flex-wrap justify-between gap-3">
+      <div className="w-full flex flex-wrap justify-center gap-3">
         <HardSkillsCards />
       </div>
     </section>

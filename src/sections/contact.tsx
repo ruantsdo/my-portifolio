@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="flex flex-col w-fit items-center md:order-2 md:max-h-96 2xl:pl-64">
           <LottieAnimation
             src={ContactAnimation}
-            className="-mb-24 -mt-24 md:-mb-5 md:-mt-5 h-96"
+            className="-mb-24 -mt-24 md:-mb-5 md:mt-5 h-80"
           />
           <SocialMediaButtons />
         </div>
