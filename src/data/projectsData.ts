@@ -4,7 +4,7 @@ const Projects: Project[] = [
   {
     title: "TicketMaster",
     description:
-      "Desenvolvi de forma independente um sistema de gerenciamento de senhas para a Secretaria Municipal de Saúde (SESAU), com funcionalidades robustas como gerenciamento de usuários, setores, serviços e chamadas de senhas. O sistema conta com dois layouts de telas de chamada, onde o paciente é chamado pelo nome e recebe instruções por voz e texto para se dirigir ao setor e mesa responsáveis pelo atendimento. Inclui também a impressão semi-automática de senhas (tickets) e busca personalizada em todas as páginas. A seção administrativa oferece gráficos e tabelas para acompanhamento detalhado, além de configurações personalizadas, sistemas de criação e recuperação de backups, limpeza de dados, banimento de usuários e gerência de vídeos que são exibidos nas telas de chamado, com controle remoto de volume.",
+      "Desenvolvi de forma independente um sistema de gerenciamento de fila para a Secretaria Municipal de Saúde da minha cidade, com funcionalidades como gerenciamento de usuários, setores, serviços e chamadas de senhas. O sistema possui telas de chamada com instruções por voz e texto, e uma seção administrativa com gráficos, tabelas, backups, limpeza de dados, banimento de usuários e gerenciamento de vídeos exibidos nas telas de chamado, com controle remoto de volume.",
     usedTechnologies:
       "React, TailWindCSS, Express, NodeJs, MySql, MySql Server, FFMPEG, Git e GitHub.",
     images: [
