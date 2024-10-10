@@ -21,6 +21,9 @@ const Projects = () => {
   return (
     <section className="flex flex-col w-[95%] md:w-full place-self-center gap-5 mt-5 mb-5">
       <h1 className="font-bold text-xl md:text-4xl">Projetos</h1>
+      <h6 className="font-semibold text-[12px] md:text-md text-red -mt-5">
+        Interaja com o card para saber mais!
+      </h6>
 
       <div className="flex flex-wrap justify-evenly gap-5">
         {visibleProjectsList.map((p, index) => (
@@ -28,13 +31,20 @@ const Projects = () => {
         ))}
       </div>
 
-      {visibleProjects < ProjectsData.length && (
+      {visibleProjects < ProjectsData.length ? (
         <Button
           variant="secondary"
           className="place-self-center"
           onClick={handleShowMore}
         >
           Ver mais
+        </Button>
+      ) : (
+        <Button
+          variant="secondary"
+          className="place-self-center hover:cursor-default"
+        >
+          Mais projetos em breve...
         </Button>
       )}
     </section>
