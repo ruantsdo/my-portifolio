@@ -15,7 +15,6 @@ const contactFormSchema = z.object({
 
   contact: z
     .string()
-    .min(16, { message: "O contato deve ter no mínimo 11 caracteres." })
     .max(16, { message: "O contato pode ter no máximo 11 caracteres." }),
 
   message: z

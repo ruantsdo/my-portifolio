@@ -48,7 +48,7 @@ const HardSkills: HardSkill[] = [
   {
     title: "Native",
     alt: "native-icon",
-    icon: Android, // Supondo que "Native" se refere ao Android, ajuste conforme necessário
+    icon: Android,
   },
   {
     title: "NextJs",

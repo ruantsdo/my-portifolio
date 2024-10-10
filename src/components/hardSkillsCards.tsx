@@ -8,7 +8,7 @@ import { HardSkills } from "@/data";
 const HardSkillsCards = () => {
   return HardSkills.map((hk, index) => {
     const style = {
-      animationDelay: `${index * 0.2}s`,
+      animationDelay: `${(index - 2) * 0.1}s`,
     };
 
     return (

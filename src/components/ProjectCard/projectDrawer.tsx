@@ -28,13 +28,14 @@ import Link from "next/link";
 
 interface Props {
   Project: Project;
+  index: number;
 }
 
-const ProjectDrawer = ({ Project }: Props) => {
+const ProjectDrawer = ({ Project, index }: Props) => {
   return (
     <Drawer>
-      <DrawerTrigger className="w-[95%] md:w-[340px] h-[300px]">
-        <ProjectCard Project={Project} />
+      <DrawerTrigger className="flex w-full md:w-[340px] h-[300px] justify-center">
+        <ProjectCard Project={Project} index={index} />
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader>

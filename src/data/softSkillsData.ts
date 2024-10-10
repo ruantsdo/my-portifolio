@@ -23,7 +23,7 @@ const SoftSkills: SoftSkill[] = [
   },
   {
     title: "Dedicação a Aprendizado",
-    description: "Sempre buscando melhorar, estou sempre disposto a aprender.",
+    description: "Sempre buscando melhorar, estou sempre disposto a aprender",
     icon: Rocket,
   },
 ];
