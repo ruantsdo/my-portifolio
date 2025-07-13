@@ -34,8 +34,8 @@ interface Props {
 const ProjectDrawer = ({ Project, index }: Props) => {
   return (
     <Drawer>
-      <DrawerTrigger className="flex w-full md:w-[340px] h-[300px] justify-center">
-        <ProjectCard Project={Project} index={index} />
+      <DrawerTrigger className="flex w-full h-[250px] justify-center">
+        <ProjectCard project={Project} index={index} />
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader>
