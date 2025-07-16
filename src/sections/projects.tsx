@@ -25,7 +25,7 @@ const Projects = () => {
         Interaja com o card para saber mais!
       </h6>
 
-      <div className="flex flex-wrap justify-evenly gap-5">
+      <div className="flex flex-wrap justify-evenly gap-3">
         {visibleProjectsList.map((p, index) => (
           <ProjectCard project={p} index={index - 2} key={index} />
         ))}

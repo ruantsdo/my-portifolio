@@ -15,7 +15,7 @@ const CardInformation = ({ title, description }: Props) => {
         {title}
       </CardTitle>
 
-      <CardDescription className="text-ellipsis overflow-hidden text-wrap line-clamp-5 font-medium text-white">
+      <CardDescription className="text-ellipsis overflow-hidden text-wrap font-medium text-white">
         {description}
       </CardDescription>
     </div>
