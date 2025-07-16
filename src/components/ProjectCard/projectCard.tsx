@@ -1,18 +1,14 @@
 //Next
 import Image from "next/image";
 //Shadcn UI
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 //Types
 import { Project } from "@/types";
 //Components
 import ProjectLinksButtons from "./projectLinksButtons";
-//Interfaces
+import CardInformation from "./cardInformation";
+import CardFooter from "./cardFooter";
+
 interface Props {
   project: Project;
   index: number;
@@ -21,54 +17,6 @@ interface Props {
 const ProjectCard = ({ project, index }: Props) => {
   const style = { animationDelay: `${index * 0.2}s` };
   const inverted = index % 2 !== 0;
-
-  const technologies = project.usedTechnologies
-    .toUpperCase()
-    .split(",")
-    .filter((term) => term);
-
-  const cardInformation = (
-    <div className={`flex flex-col gap-2`}>
-      <CardTitle className="text-center font-bold text-sm mt-1 md:mt-0">
-        {project.title}
-      </CardTitle>
-
-      <CardDescription className="text-ellipsis overflow-hidden text-wrap line-clamp-5 font-medium text-white">
-        {project.description}
-      </CardDescription>
-    </div>
-  );
-
-  const cardImage = project.images?.[0] && (
-    <Image
-      src={project.images[0].src}
-      alt={project.images[0].alt}
-      blurDataURL="data:..."
-      placeholder="blur"
-      width={500}
-      height={500}
-      className="self-center md:max-w-[400px] h-[230px] rounded-md shadow-[0px_0px_2px_0px_#d9d9d9]"
-      loading="lazy"
-    />
-  );
-
-  const cardFooter = (
-    <div
-      className={`flex flex-col ${
-        inverted ? "md:items-start" : "md:items-end"
-      } mt-3 md:mt-5`}
-    >
-      <p className="text-sm">Tecnologias usadas</p>
-      <div className="flex flex-wrap gap-1">
-        {technologies.map((tech, i) => (
-          <Badge key={i} variant="secondary" className="w-fit">
-            {tech}
-          </Badge>
-        ))}
-      </div>
-      <ProjectLinksButtons links={project.links} />
-    </div>
-  );
 
   return (
     <div className="w-full h-full animate-slide-in-left" style={style}>
@@ -79,12 +27,34 @@ const ProjectCard = ({ project, index }: Props) => {
               inverted ? "md:flex-row-reverse" : "md:flex-row"
             }`}
           >
-            {cardImage}
+            <Image
+              src={project.images[0].src}
+              alt={project.images[0].alt}
+              blurDataURL="data:..."
+              placeholder="blur"
+              width={500}
+              height={500}
+              className="self-center md:max-w-[400px] h-[230px] rounded-md shadow-[0px_0px_2px_0px_#d9d9d9]"
+              loading="lazy"
+            />
             <div
               className={`flex flex-col ${inverted ? "md:mr-5" : "md:ml-5"}`}
             >
-              {cardInformation}
-              {cardFooter}
+              <CardInformation
+                title={project.title}
+                description={project.description}
+              />
+              <div
+                className={`flex flex-col ${
+                  inverted ? "md:items-start" : "md:items-end"
+                } mt-3 md:mt-5`}
+              >
+                <CardFooter
+                  usedTechnologies={project.usedTechnologies}
+                  inverted={inverted}
+                />
+                <ProjectLinksButtons links={project.links} />
+              </div>
             </div>
           </div>
         </CardContent>
