@@ -1,4 +1,4 @@
-//Shadch UI
+//Shadcn UI
 import { Button } from "@/components/ui/button";
 //Types
 import { Project } from "@/types";
