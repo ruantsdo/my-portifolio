@@ -16,7 +16,7 @@ const CardFooter = ({ usedTechnologies, inverted }: Props) => {
 
   return (
     <div className="flex flex-col flex-wrap gap-1">
-      <p className={`text-sm ${inverted ? "text-start" : "text-end"}`}>
+      <p className={`text-sm ${inverted ? "md:text-start" : "md:text-end"}`}>
         Tecnologias usadas
       </p>
       <div className="flex flex-wrap gap-1">
