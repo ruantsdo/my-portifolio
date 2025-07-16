@@ -18,7 +18,10 @@ const ProjectLinksButtons = ({ links = {} }: Props) => {
   return (
     <div className="flex flex-wrap gap-3 mt-2">
       {videos && (
-        <Button className="w-fit h-8 gap-1" asChild>
+        <Button
+          className="w-fit h-8 gap-1 hover:shadow-[0px_0px_5px_0px_#EE4266]"
+          asChild
+        >
           <div>
             <Image src={Media} alt="Media Icon" className="w-5 h-5" />
             <Link href={videos[0].src} target="_blank">
@@ -28,7 +31,10 @@ const ProjectLinksButtons = ({ links = {} }: Props) => {
         </Button>
       )}
       {preview && (
-        <Button className="w-fit h-8 gap-1" asChild>
+        <Button
+          className="w-fit h-8 gap-1 hover:shadow-[0px_0px_5px_0px_#2E95B4]"
+          asChild
+        >
           <div>
             <Image src={Eye} alt="Eye Icon" className="w-5 h-5" />
             <Link href={preview} target="_blank">
@@ -38,7 +44,10 @@ const ProjectLinksButtons = ({ links = {} }: Props) => {
         </Button>
       )}
       {github && (
-        <Button className="w-fit h-8 gap-1" asChild>
+        <Button
+          className="w-fit h-8 gap-1 hover:shadow-[0px_0px_5px_0px_#8957E5]"
+          asChild
+        >
           <div>
             <Image
               src={GitHubAlternative}
