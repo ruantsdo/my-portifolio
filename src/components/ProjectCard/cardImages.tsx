@@ -4,6 +4,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Project } from "@/types";
 import Image from "next/image";
@@ -61,6 +63,9 @@ const CardImages = ({ images, delayMultiplayer }: Props) => {
           </CarouselItem>
         ))}
       </CarouselContent>
+
+      <CarouselPrevious className="mt-24 ml-44 md:ml-52" size={"sm"} />
+      <CarouselNext className="mt-24 mr-44 md:mr-52" size={"sm"} />
     </Carousel>
   );
 };
