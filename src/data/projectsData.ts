@@ -73,12 +73,14 @@ const Projects: Project[] = [
         src: "https://i.ibb.co/G7J123Z/users-modal.png",
       },
     ],
-    videos: [
-      {
-        src: "https://streamable.com/e/8jo393?loop=0",
-        alt: "Video demonstrativo do sistema implantado no local",
-      },
-    ],
+    links: {
+      videos: [
+        {
+          src: "https://streamable.com/e/8jo393?loop=0",
+          alt: "Video demonstrativo do sistema implantado no local",
+        },
+      ],
+    },
   },
   {
     title: "IX FÓRUM DE TECNOLOGIA",
@@ -86,7 +88,6 @@ const Projects: Project[] = [
       "Participei do desenvolvimento do design e do material visual do fórum. Também criei uma página de apresentação com um formulário de inscrições integrado ao Firebase, garantindo uma interface moderna e funcional para o evento. Além disso, desenvolvi um subsistema para marcação de presença nos dias do evento, também integrado ao firebase.",
     usedTechnologies:
       "Vite, Firebase, Figma, Git, Github, TailWindCSS, Typescript e Javascript",
-    demo: "https://forumdetecnologia.com.br/",
     images: [
       {
         alt: "apresentação do fórum",
@@ -122,12 +123,15 @@ const Projects: Project[] = [
         src: "https://i.ibb.co/ZdRV9yz/forum-presence.png",
       },
     ],
-    videos: [
-      {
-        alt: "demostração do cronometro",
-        src: "https://streamable.com/e/amocbs?loop=0",
-      },
-    ],
+    links: {
+      videos: [
+        {
+          alt: "demostração do cronometro",
+          src: "https://streamable.com/e/amocbs?loop=0",
+        },
+      ],
+      demo: "https://forumdetecnologia.com.br/",
+    },
   },
   {
     title: "FarmaGame",
@@ -166,7 +170,6 @@ const Projects: Project[] = [
     description:
       "Portfólio criado com carinho para poder demostrar as minhas experiencias e habilidades.",
     usedTechnologies: "NextJs",
-    github: "https://github.com/ruantsdo/my-portifolio",
     images: [
       {
         alt: "apresentação",
@@ -193,6 +196,9 @@ const Projects: Project[] = [
         src: "https://i.ibb.co/bbJp2Zx/projects.png",
       },
     ],
+    links: {
+      github: "https://github.com/ruantsdo/my-portifolio",
+    },
   },
 ];
 
