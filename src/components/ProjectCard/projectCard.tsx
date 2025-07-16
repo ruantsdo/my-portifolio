@@ -8,9 +8,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 //Types
 import { Project } from "@/types";
+//Components
+import ProjectLinksButtons from "./projectLinksButtons";
 //Interfaces
 interface Props {
   project: Project;
@@ -65,16 +66,7 @@ const ProjectCard = ({ project, index }: Props) => {
           </Badge>
         ))}
       </div>
-
-      <div className="flex flex-wrap gap-3 mt-2">
-        {project.videos && (
-          <Button className="w-fit h-8">Vídeo Demonstrativo</Button>
-        )}
-        {project.demo && <Button className="w-fit h-8">Preview</Button>}
-        {project.github && (
-          <Button className="w-fit h-8">Repositório no Github</Button>
-        )}
-      </div>
+      <ProjectLinksButtons links={project.links} />
     </div>
   );
 
