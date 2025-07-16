@@ -1,5 +1,3 @@
-//Next
-import Image from "next/image";
 //Shadcn UI
 import { Card, CardContent } from "@/components/ui/card";
 //Types
@@ -8,6 +6,7 @@ import { Project } from "@/types";
 import ProjectLinksButtons from "./projectLinksButtons";
 import CardInformation from "./cardInformation";
 import CardFooter from "./cardFooter";
+import CardImages from "./cardImages";
 
 interface Props {
   project: Project;
@@ -27,15 +26,9 @@ const ProjectCard = ({ project, index }: Props) => {
               inverted ? "md:flex-row-reverse" : "md:flex-row"
             }`}
           >
-            <Image
-              src={project.images[0].src}
-              alt={project.images[0].alt}
-              blurDataURL="data:..."
-              placeholder="blur"
-              width={500}
-              height={500}
-              className="self-center md:max-w-[400px] h-[230px] rounded-md shadow-[0px_0px_2px_0px_#d9d9d9]"
-              loading="lazy"
+            <CardImages
+              images={project.images}
+              delayMultiplayer={(index + 2) * 750}
             />
             <div
               className={`flex flex-col ${inverted ? "md:mr-5" : "md:ml-5"}`}
