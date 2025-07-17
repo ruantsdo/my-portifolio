@@ -2,7 +2,7 @@
 //React
 import { useState, useMemo } from "react";
 // Components
-import { ProjectDrawer } from "@/components";
+import { ProjectCard } from "@/components";
 import { Button } from "@/components/ui/button";
 // Data
 import { Projects as ProjectsData } from "@/data";
@@ -25,9 +25,9 @@ const Projects = () => {
         Interaja com o card para saber mais!
       </h6>
 
-      <div className="flex flex-wrap justify-evenly gap-5">
+      <div className="flex flex-wrap justify-evenly gap-3">
         {visibleProjectsList.map((p, index) => (
-          <ProjectDrawer Project={p} index={index - 2} key={index} />
+          <ProjectCard project={p} index={index - 2} key={index} />
         ))}
       </div>
 

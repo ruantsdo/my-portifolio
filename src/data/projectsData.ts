@@ -6,7 +6,7 @@ const Projects: Project[] = [
     description:
       "Desenvolvi de forma independente um sistema de gerenciamento de fila para a Secretaria Municipal de Saúde da minha cidade, com funcionalidades como gerenciamento de usuários, setores, serviços e chamadas de senhas. O sistema possui telas de chamada com instruções por voz e texto, e uma seção administrativa com gráficos, tabelas, backups, limpeza de dados, banimento de usuários e gerenciamento de vídeos exibidos nas telas de chamado, com controle remoto de volume.",
     usedTechnologies:
-      "React, TailWindCSS, Express, NodeJs, MySql, MySql Server, FFMPEG, Git e GitHub.",
+      "React, TailWindCSS, Express, NodeJs, MySql, MySql Server, FFMPEG, Git, GitHub.",
     images: [
       {
         alt: "home com notificação e menu suspenso",
@@ -73,20 +73,22 @@ const Projects: Project[] = [
         src: "https://i.ibb.co/G7J123Z/users-modal.png",
       },
     ],
-    videos: [
-      {
-        src: "https://streamable.com/e/8jo393?loop=0",
-        alt: "Video demonstrativo do sistema implantado no local",
-      },
-    ],
+    links: {
+      videos: [
+        {
+          src: "https://streamable.com/e/8jo393?loop=0",
+          alt: "Video demonstrativo do sistema implantado no local",
+        },
+      ],
+      github: "https://github.com/ruantsdo/ticketingSystem",
+    },
   },
   {
     title: "IX FÓRUM DE TECNOLOGIA",
     description:
       "Participei do desenvolvimento do design e do material visual do fórum. Também criei uma página de apresentação com um formulário de inscrições integrado ao Firebase, garantindo uma interface moderna e funcional para o evento. Além disso, desenvolvi um subsistema para marcação de presença nos dias do evento, também integrado ao firebase.",
     usedTechnologies:
-      "Vite, Firebase, Figma, Git, Github, TailWindCSS, Typescript e Javascript",
-    demo: "https://forumdetecnologia.com.br/",
+      "Vite, Firebase, Figma, Git, Github, TailWind, Typescript, Javascript",
     images: [
       {
         alt: "apresentação do fórum",
@@ -122,18 +124,69 @@ const Projects: Project[] = [
         src: "https://i.ibb.co/ZdRV9yz/forum-presence.png",
       },
     ],
-    videos: [
+    links: {
+      videos: [
+        {
+          alt: "demostração do cronometro",
+          src: "https://streamable.com/e/amocbs?loop=0",
+        },
+      ],
+      preview: "https://forumdetecnologia.com.br/",
+    },
+  },
+  {
+    title: "MathPow",
+    description: `Aplicativo voltado para crianças, com o objetivo de explorar conceitos matemáticos de forma lúdica. A aplicação apresenta uma interface adaptada para a faixa etária infantil, com recursos interativos e animações
+      leves para tornar o aprendizado mais dinâmico e visualmente mais atraente.`,
+    usedTechnologies:
+      "React Native, TypeScript, Lottie, Yup, Zustand, Firebase, Formik, Expo, Shopify",
+    images: [
       {
-        alt: "demostração do cronometro",
-        src: "https://streamable.com/e/amocbs?loop=0",
+        alt: "home",
+        src: "https://i.ibb.co/0jFpMbzZ/home.png",
+      },
+      {
+        alt: "meio da sessão",
+        src: "https://i.ibb.co/ymHwT1FS/mid-game.png",
+      },
+      {
+        alt: "finalizado",
+        src: "https://i.ibb.co/Q3bVCVXM/course-finalized.png",
+      },
+      {
+        alt: "pré-jogo",
+        src: "https://i.ibb.co/V7fYnDp/pre-game.png",
+      },
+      {
+        alt: "alternativa certa",
+        src: "https://i.ibb.co/bgnJ6vT3/correct.png",
+      },
+      {
+        alt: "página do curso",
+        src: "https://i.ibb.co/KcCspnDX/course-page.png",
+      },
+      {
+        alt: "alternativa errada",
+        src: "https://i.ibb.co/6c4RWSGs/wrong.png",
+      },
+      {
+        alt: "FAQ",
+        src: "https://i.ibb.co/pjgFpkVn/FAQ.png",
+      },
+      {
+        alt: "home 2",
+        src: "https://i.ibb.co/chW7Yv6V/home-2.png",
       },
     ],
+    links: {
+      github: "https://github.com/Jhonatanmizu/Math.Pow",
+    },
   },
   {
     title: "FarmaGame",
     description:
       "Contribuí no desenvolvimento de uma plataforma gamificada para medir e aumentar o conhecimento dos funcionários de uma empresa. A solução inclui minigames que transmitem conceitos empresariais de forma dinâmica, tornando o aprendizado mais envolvente e monitorável",
-    usedTechnologies: "NextJs, JavaScript, TypeScript, NodeJs, MySql e Prisma",
+    usedTechnologies: "NextJs, JavaScript, TypeScript, NodeJs, MySql, Prisma",
     images: [
       {
         alt: "home",
@@ -162,11 +215,30 @@ const Projects: Project[] = [
     ],
   },
   {
+    title: "Aliens Friends",
+    description: `Projeto criado como prática a partir de um dos desafios do curso 'Zero To Mastery' na Udemy, com o objetivo de demonstrar, de forma simples, como realizar requisições a múltiplas APIs para gerar aliens de forma aleatória.
+      O projeto conta com uma interface limpa, um campo de busca funcional e integra chamadas a diferentes APIs para exibir dados de forma dinâmica. Apesar do projeto apresentado no curso não usar TypeScript, resolvi criar com, afim de praticar mais`,
+    usedTechnologies: "ReactJs, TypeScript, Tachyons, CSS",
+    images: [
+      {
+        alt: "topo",
+        src: "https://i.ibb.co/HTcdNjTG/aliensfriends.png",
+      },
+      {
+        alt: "restante",
+        src: "https://i.ibb.co/3tH71fL/aliensfriends-2.png",
+      },
+    ],
+    links: {
+      github: "https://github.com/ruantsdo/alien-friends",
+      preview: "https://alien-friends.vercel.app",
+    },
+  },
+  {
     title: "Meu portfólio",
     description:
       "Portfólio criado com carinho para poder demostrar as minhas experiencias e habilidades.",
-    usedTechnologies: "NextJs",
-    github: "https://github.com/ruantsdo/my-portifolio",
+    usedTechnologies: "NextJs, Tailwind",
     images: [
       {
         alt: "apresentação",
@@ -193,6 +265,9 @@ const Projects: Project[] = [
         src: "https://i.ibb.co/bbJp2Zx/projects.png",
       },
     ],
+    links: {
+      github: "https://github.com/ruantsdo/my-portifolio",
+    },
   },
 ];
 

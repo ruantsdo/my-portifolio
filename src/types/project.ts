@@ -4,10 +4,12 @@ interface Project {
   title: string;
   description: string;
   usedTechnologies: string;
-  videos?: CarouselItem[];
   images: CarouselItem[];
-  github?: string;
-  demo?: string;
+  links?: {
+    videos?: CarouselItem[];
+    github?: string;
+    preview?: string;
+  };
 }
 
 export default Project;
